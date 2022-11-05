@@ -1,10 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('run') {
             steps {
-                echo 'Welcome to Jenkins World R'
-                sh 'echo Integrating Jenkins Pipeline with GitHub Webhook using Jenkinsfile'
+                echo 'Welcome to Jenkins World'
+                sh 'python --version'
+                sh 'python pipeline.py'
             }
         }
     }
